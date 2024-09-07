@@ -4,6 +4,8 @@
 # Directories
 bin
 bin-int
+.vs/
+Binaries/
 
 # Makefiles
 Makefile
@@ -50,3 +52,6 @@ Makefile
 *.exe
 *.out
 *.app
+
+# Exclude
+!Vendor/Binaries
