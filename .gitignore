@@ -55,3 +55,4 @@ Makefile
 
 # Exclude
 !Vendor/Binaries
+!Vendor/Binaries/Premake/Windows/premake5.exe
