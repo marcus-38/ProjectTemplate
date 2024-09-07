@@ -26,7 +26,7 @@ project "App"
     }
 
     targetdir ("../Binaries/" .. outputdir .. "/%{prj.name}")
-    objdir ("../Binaries/Intermediates/" .. outputdir .. "%{pfj.name}")
+    objdir ("../Binaries/Intermediates/" .. outputdir .. "%{prj.name}")
 
     filter "system:windows"
         systemversion "latest"
