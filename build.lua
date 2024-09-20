@@ -1,6 +1,6 @@
 -- premake5.lua
 workspace "New Project"
-    architecture "ARM64" -- change to your architecture
+    architecture "x64" -- change to your architecture
     configurations { "Debug", "Release" }
     startproject "App"
 
@@ -13,5 +13,7 @@ workspace "New Project"
     group "Core"
         include "Core/Build-Core.lua"
     group ""
+
+    include "External.lua"
 
     include "App/Build-App.lua"

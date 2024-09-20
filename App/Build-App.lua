@@ -17,7 +17,8 @@ project "App"
     {
         "src",
         -- include Core
-        "../Core/src"
+        "../Core/src",
+        "%{IncludeDirs.spdlog}"
     }
 
     links 
