@@ -19,6 +19,8 @@ Makefile
 *.vcxproj*
 *.VC.opendb
 *.VC.db
+*.sln
+
 
 # Prerequisites
 *.d
