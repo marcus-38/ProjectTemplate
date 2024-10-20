@@ -43,4 +43,4 @@ py.exe init.py
 - [x] download premake5 is missing
     - [x] check if it is working on Windows
     - [ ] check if it is working on MacOS
-    - [ ] check if it is working on Linux
+    - [x] check if it is working on Linux
