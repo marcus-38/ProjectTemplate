@@ -1,3 +1,3 @@
 @echo off
-py.exe init.py %*
+py.exe init.py --vs %*
 pause
