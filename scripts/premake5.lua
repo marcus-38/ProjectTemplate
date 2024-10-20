@@ -1,11 +1,12 @@
 -- premake5.lua
 
-include "dependencies/conandeps.premake5.lua"
+include "../dependencies/conandeps.premake5.lua"
 
 workspace "New Project"
     architecture "x64" -- change to your architecture
     configurations { "Debug", "Release" }
     startproject "App"
+    location "../"
 
     -- workspace build options visual studio
     filter "system:windows"
@@ -19,7 +20,7 @@ workspace "New Project"
         objdir    "Build/%{cfg.buildcfg}/obj"
         staticruntime "off"
 
-        location "./src"
+        location "../src"
 
         files 
         { 
