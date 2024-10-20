@@ -14,6 +14,7 @@ This only works on Windows but should be easy to convert to Linux and MacOS. Thi
 conan profile detect
 ```
 3. Install Python from https://python.org
+4. Install other requisites for your platform, i.e: cmake, build-essensial, xcode, visual studio ...
 
 ## What do I have to do to use this
 To use this project template you have to check/edit the following:
@@ -33,7 +34,7 @@ py.exe init.py
 - [x] setup conan as package manager
 - [x] let init.py switch on Visual Studio, Xcode, Makefile by os type
     - [ ] check if it is working on MacOS
-    - [ ] check if it is working on Linux
+    - [x] check if it is working on Linux
 - [ ] install python if missing
 - [ ] install conan if missing
     - [ ] automatically run "conan profile detect --force"
