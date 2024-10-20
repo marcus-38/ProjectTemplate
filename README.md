@@ -26,7 +26,9 @@ py.exe init.py
 - [x] setup premake
 - [x] switch to python script to setup everything
 - [x] setup conan as package manager
-- [ ] let init.py switch on Visual Studio, Xcode, Makefile
+- [x] let init.py switch on Visual Studio, Xcode, Makefile by os type
+    - [ ] check if it is working on MacOS
+    - [ ] check if it is working on Linux
 - [ ] install python if missing
 - [ ] install conan if missing
     - [ ] automatically run "conan profile detect --force"
