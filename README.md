@@ -36,6 +36,7 @@ py.exe init.py
     - [x] check if it is working on Windows
     - [ ] check if it is working on MacOS
     - [x] check if it is working on Linux
+- [x] create cleaning script to remove all generated stuff   
 - [ ] install python if missing
 - [ ] install conan if missing
     - [ ] automatically run "conan profile detect --force"
