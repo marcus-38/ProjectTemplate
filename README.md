@@ -17,7 +17,8 @@ To use this project template you have to check/edit the following:
 1. Don't use this template, use https://github.com/TheCherno/ProjectTemplate/tree/master instead
 2. make sure you have the correct architecture in premake5.lua
 3. change project name, app name (if you want)
-4. run 
+4. init.py will check which type of system you have and set accordingly
+For Windows you can double click setup.bat instead
 ``` 
 py.exe init.py
 ```
