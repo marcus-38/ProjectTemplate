@@ -28,8 +28,8 @@ if __name__ == '__main__':
 	shutil.rmtree('./dependencies', ignore_errors=True)
 
 	# clear project
-	print("Removing ./vs")
-	shutil.rmtree('./vs', ignore_errors=True)
+	print("Removing ./.vs")
+	shutil.rmtree('./.vs', ignore_errors=True)
 
 	RecursiveRemove(
 		'./',
