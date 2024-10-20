@@ -38,4 +38,5 @@ py.exe init.py
 - [ ] install python if missing
 - [ ] install conan if missing
     - [ ] automatically run "conan profile detect --force"
+- [ ] install other dependencies (cmake, build-essensial ...)
 - [ ] download premake5 is missing
