@@ -9,7 +9,11 @@ Don't base your code on mine, I don't really know what I'm doing. Check out TheC
 This only works on Windows but should be easy to convert to Linux and MacOS. This will create a Visual Studio environment.
 
 1. Install Conan from https://conan.io
-2. Install Python from https://python.org
+2. Run
+```
+conan profile detect
+```
+3. Install Python from https://python.org
 
 ## What do I have to do to use this
 To use this project template you have to check/edit the following:
