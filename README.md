@@ -38,8 +38,8 @@ py.exe init.py
     - [x] check if it is working on Linux
 - [x] create cleaning script to remove all generated stuff   
 - [ ] install python if missing
-- [ ] install conan if missing
-    - [ ] automatically run "conan profile detect --force"
+- [x] install conan if missing
+    - [ ] automatically run "conan profile detect"
 - [ ] install other dependencies (cmake, build-essensial ...)
 - [x] download premake5 is missing
     - [x] check if it is working on Windows

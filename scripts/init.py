@@ -3,6 +3,7 @@ import sys
 import tarfile
 import zipfile
 import subprocess
+import importlib.util
 import urllib.request
 
 def ConanBuild(conf):
@@ -41,7 +42,7 @@ def GetExecutable(exe):
 		return f'{exe}.exe'
 
 
-def downloadPremake(version = '5.0.0-beta2'):
+def DownloadPremake(version = '5.0.0-beta2'):
 	url = GetPremakeDownloadUrl(version)
 	targetFolder = './dependencies/premake5'
 	premakeTargetZip = f'{targetFolder}/premake5.tmp'
@@ -59,10 +60,22 @@ def downloadPremake(version = '5.0.0-beta2'):
 			with tarfile.open(premakeTargetZip, 'r') as tarFile:
 				tarFile.extract('./premake5', targetFolder)
 
+def InstallPythonPackage(package_name):
+	spec = importlib.util.find_spec(package_name)
+	if spec is None:
+		print(f'Package {package_name} will be installed')
+		proc = subprocess.Popen([sys.executable, '-m', 'pip', 'install', package_name])
+		proc.wait()
+		subprocess.run(['conan', 'profile', 'detect', '--force'])
+	else:
+		print(f'Package {package_name} is already installed')
+
+
 if __name__ == "__main__":
 
-	downloadPremake()
+	DownloadPremake()
 
+	InstallPythonPackage("conan")
 	subprocess.run(ConanBuild('Debug'))
 	subprocess.run(ConanBuild('Release'))
 
