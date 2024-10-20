@@ -32,7 +32,6 @@ workspace "New Project"
         filter "system:windows"
             systemversion "latest"
             defines { "WINDOWS" }
-            linkoptions { "/IGNORE:4099" }
 
         filter "configurations:Debug"
             defines { "DEBUG" }
