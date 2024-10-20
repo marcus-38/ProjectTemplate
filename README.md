@@ -39,7 +39,7 @@ py.exe init.py
 - [x] create cleaning script to remove all generated stuff   
 - [ ] install python if missing
 - [x] install conan if missing
-    - [ ] automatically run "conan profile detect"
+    - [x] automatically run "conan profile detect --force"
 - [ ] install other dependencies (cmake, build-essensial ...)
 - [x] download premake5 is missing
     - [x] check if it is working on Windows
