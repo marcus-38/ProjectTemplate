@@ -45,3 +45,6 @@ py.exe init.py
     - [x] check if it is working on Windows
     - [ ] check if it is working on MacOS
     - [x] check if it is working on Linux
+- [ ] config file to enable or disable features
+    - [ ] spdlog
+    - [ ] ImGui
