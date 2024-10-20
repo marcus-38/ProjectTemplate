@@ -68,6 +68,6 @@ if __name__ == "__main__":
 
 	premakeGenerator = GetPremakeGenerator()
 	subprocess.run((
-		f'./dependencies/Premake5/premake5', '--file=./scripts/premake5.lua', premakeGenerator
+		f'./dependencies/premake5/premake5', '--file=./scripts/premake5.lua', premakeGenerator
 	))
 
