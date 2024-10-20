@@ -6,6 +6,8 @@ bin
 bin-int
 .vs/
 Binaries/
+Build/
+dependencies/
 
 # Makefiles
 Makefile
